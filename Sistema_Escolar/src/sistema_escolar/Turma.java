@@ -9,7 +9,7 @@ public class Turma extends Pessoa{
         this.quantidadeAluno = quantidadeAluno;
         this.numeroSala = numeroSala;
     }
-    
+
     public void setQuantidadeAluno(int quantidadeAluno){
         this.quantidadeAluno = quantidadeAluno;
     }
