@@ -26,8 +26,12 @@ public class Aluno extends Pessoa{
         return curso;
     }
     
+    @Override
     public void exibirPerfil(){
-        System.out.println("Nome: "+ getNome() + "\n" + "CPF: "+ getCpf() + "\n" + "Idade: "+ getIdade() + 
-                "\n" + "Curso: "+ getCurso() + "\n" + "Matricula: "+ getMatricula());
+        System.out.println("Nome: "+ getNome());
+        System.out.println("CPF: " + getCpf());
+        System.out.println("Idade: " + getIdade());
+        System.out.println("Matricula: " + getMatricula());
+        System.out.println("Curso: " + getCurso());
     }
 }

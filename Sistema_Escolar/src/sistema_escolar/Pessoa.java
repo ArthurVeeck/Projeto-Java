@@ -33,5 +33,11 @@ public class Pessoa {
     
     public int getIdade(){
         return idade;
-    }   
+    }  
+    
+    public void exibirPerfil(){
+        System.out.println("Nome: "+ getNome());
+        System.out.println("CPF: " + getCpf());
+        System.out.println("Idade: " + getIdade());
+    }
 }

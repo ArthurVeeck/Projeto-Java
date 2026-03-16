@@ -8,5 +8,4 @@ public class Sistema_Escolar {
         Scanner ler = new Scanner(System.in);
 
     }
-    
 }
