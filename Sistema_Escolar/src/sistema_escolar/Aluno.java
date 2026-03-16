@@ -1,6 +1,4 @@
-
-package com.mycompany.sistemaescolar;
-
+package sistema_escolar;
 
 public class Aluno extends Pessoa{
     private int matricula;

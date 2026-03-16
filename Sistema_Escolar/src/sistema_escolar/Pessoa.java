@@ -1,6 +1,4 @@
-
-package com.mycompany.sistemaescolar;
-
+package sistema_escolar;
 
 public class Pessoa {
     private String nome;
@@ -35,5 +33,5 @@ public class Pessoa {
     
     public int getIdade(){
         return idade;
-    }
+    }   
 }

@@ -1,6 +1,4 @@
-
-package com.mycompany.sistemaescolar;
-
+package sistema_escolar;
 
 public class Professor extends Pessoa{
      private String disciplina;
