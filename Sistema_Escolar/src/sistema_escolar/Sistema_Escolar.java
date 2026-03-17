@@ -33,11 +33,17 @@ public class Sistema_Escolar {
 
                     System.out.print("CPF: ");
                     String cpfA = ler.nextLine();
+                    
+                    System.out.println("Idade: ");
+                    int idadeA = ler.nextInt();
 
                     System.out.print("Matrícula: ");
-                    String mat = ler.nextLine();
+                    int matA = ler.nextInt();
+                    
+                    System.out.println("Curso: ");
+                    String cursoA = ler.nextLine();
 
-                    pessoas.add(new Aluno(nomeA, cpfA, mat));
+                    pessoas.add(new Aluno(nomeA, cpfA, idadeA, matA, cursoA));
                     break;
 
                 case 2:
@@ -46,11 +52,17 @@ public class Sistema_Escolar {
 
                     System.out.print("CPF: ");
                     String cpfP = ler.nextLine();
+                    
+                    System.out.println("Idade: ");
+                    int idadeP = ler.nextInt();
 
-                    System.out.print("Disciplina: ");
-                    String disc = ler.nextLine();
+                    System.out.print("Carga Horaria em minutos: ");
+                    int cargaHorariaP = ler.nextInt();
+                    
+                    System.out.println("Salario: ");
+                    double salarioP = ler.nextDouble();
 
-                    pessoas.add(new Professor(nomeP, cpfP, disc));
+                    pessoas.add(new Professor(nomeP, cpfP, idadeP, cargaHorariaP, salarioP));
                     break;
 
                 case 3:
@@ -59,18 +71,27 @@ public class Sistema_Escolar {
 
                     System.out.print("CPF: ");
                     String cpfF = ler.nextLine();
+                    
+                    System.out.println("Idade: ");
+                    int IdadeF = ler.nextInt();
 
-                    System.out.print("Cargo: ");
-                    String cargo = ler.nextLine();
+                    System.out.print("Carga Horaria em minutos: ");
+                    int cargaHorariaF = ler.nextInt();
+                    
+                    System.out.println("Salario: ");
+                    double salarioF = ler.nextDouble();
 
-                    pessoas.add(new Funcionario(nomeF, cpfF, cargo));
+                    pessoas.add(new Funcionario(nomeF, cpfF, IdadeF, salarioF, cargaHorariaF));
                     break;
 
                 case 4:
-                    System.out.print("Nome da turma: ");
-                    String nomeT = ler.nextLine();
+                    System.out.print("Numero da turma: ");
+                    int numeroT = ler.nextInt();
+                    
+                    System.out.println("Quantidade de aluno: ");
+                    int QuantidadeT = ler.nextInt();
 
-                    turmas.add(new Turma(nomeT));
+                    turmas.add(new Turma(QuantidadeT, numeroT));
                     System.out.println("Turma criada!");
                     break;
 

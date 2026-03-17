@@ -1,11 +1,10 @@
 package sistema_escolar;
 
-public class Turma extends Pessoa{
+public class Turma{
     private int quantidadeAluno;
     private int numeroSala;
     
-    public Turma(String nome, String cpf, int idade, int quantidadeAluno, int numeroSala) {
-        super(nome, cpf, idade);
+    public Turma(int quantidadeAluno, int numeroSala) {
         this.quantidadeAluno = quantidadeAluno;
         this.numeroSala = numeroSala;
     }
@@ -26,7 +25,6 @@ public class Turma extends Pessoa{
         return numeroSala;
     }
     
-    @Override
     public void exibirPerfil(){
         System.out.println("Numero da sala: "+ getNumeroSala());
         System.out.println("Quantidade de aluno: " + getQuantidadeAluno());
