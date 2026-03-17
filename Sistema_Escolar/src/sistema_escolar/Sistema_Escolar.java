@@ -95,7 +95,7 @@ public class Sistema_Escolar {
                 case 5:
                     System.out.println("\n--- LISTA DE PESSOAS ---");
                     for (Pessoa p : pessoas) {
-                        p.exibirPerfil(); // POLIMORFISMO AQUI
+                        p.exibirPerfil(); 
                         System.out.println("");
                     }
                     break;
