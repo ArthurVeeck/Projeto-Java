@@ -1,8 +1,8 @@
 5) Sistema Escolar
 
   Participantes:
-    Henrique Ibarra Ortiz urbano
-    Arthur da Silva Veeck
+  Henrique Ibarra Ortiz urbano
+  Arthur da Silva Veeck
 
 Oque cada um vez:
 
