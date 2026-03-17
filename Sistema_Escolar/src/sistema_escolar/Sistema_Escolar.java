@@ -40,8 +40,6 @@ public class Sistema_Escolar {
                     System.out.print("Matrícula: ");
                     int matA = ler.nextInt();
                                
-                    System.out.println("");
-
                     pessoas.add(new Aluno(nomeA, cpfA, idadeA, matA));
                     break;
 
@@ -61,8 +59,6 @@ public class Sistema_Escolar {
                     System.out.println("Salario: ");
                     double salarioP = ler.nextDouble();
                     
-                    System.out.println("");
-
                     pessoas.add(new Professor(nomeP, cpfP, idadeP, cargaHorariaP, salarioP));
                     break;
 
@@ -82,8 +78,6 @@ public class Sistema_Escolar {
                     System.out.println("Salario: ");
                     double salarioF = ler.nextDouble();
                     
-                    System.out.println("");
-
                     pessoas.add(new Funcionario(nomeF, cpfF, IdadeF, salarioF, cargaHorariaF));
                     break;
 
@@ -95,16 +89,14 @@ public class Sistema_Escolar {
                     int QuantidadeT = ler.nextInt();
 
                     turmas.add(new Turma(QuantidadeT, numeroT));
-                    System.out.println("Turma criada!");
-                    
-                    System.out.println("");
+                    System.out.println("Turma criada!");              
                     break;
 
                 case 5:
                     System.out.println("\n--- LISTA DE PESSOAS ---");
-                    System.out.println("");
                     for (Pessoa p : pessoas) {
                         p.exibirPerfil(); // POLIMORFISMO AQUI
+                        System.out.println("");
                     }
                     break;
 
