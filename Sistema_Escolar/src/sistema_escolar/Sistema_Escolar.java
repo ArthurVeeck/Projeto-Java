@@ -28,7 +28,7 @@ public class Sistema_Escolar {
             switch (opcao) {
 
                 case 1:
-                    System.out.print("Nome: ");
+                    System.out.print("Nome do aluno: ");
                     String nomeA = ler.nextLine();
 
                     System.out.print("CPF: ");
@@ -36,18 +36,17 @@ public class Sistema_Escolar {
                     
                     System.out.println("Idade: ");
                     int idadeA = ler.nextInt();
-
+                    
                     System.out.print("Matrícula: ");
                     int matA = ler.nextInt();
-                    
-                    System.out.println("Curso: ");
-                    String cursoA = ler.nextLine();
+                               
+                    System.out.println("");
 
-                    pessoas.add(new Aluno(nomeA, cpfA, idadeA, matA, cursoA));
+                    pessoas.add(new Aluno(nomeA, cpfA, idadeA, matA));
                     break;
 
                 case 2:
-                    System.out.print("Nome: ");
+                    System.out.print("Nome do professor: ");
                     String nomeP = ler.nextLine();
 
                     System.out.print("CPF: ");
@@ -61,12 +60,14 @@ public class Sistema_Escolar {
                     
                     System.out.println("Salario: ");
                     double salarioP = ler.nextDouble();
+                    
+                    System.out.println("");
 
                     pessoas.add(new Professor(nomeP, cpfP, idadeP, cargaHorariaP, salarioP));
                     break;
 
                 case 3:
-                    System.out.print("Nome: ");
+                    System.out.print("Nome do funcionario: ");
                     String nomeF = ler.nextLine();
 
                     System.out.print("CPF: ");
@@ -80,6 +81,8 @@ public class Sistema_Escolar {
                     
                     System.out.println("Salario: ");
                     double salarioF = ler.nextDouble();
+                    
+                    System.out.println("");
 
                     pessoas.add(new Funcionario(nomeF, cpfF, IdadeF, salarioF, cargaHorariaF));
                     break;
@@ -93,25 +96,27 @@ public class Sistema_Escolar {
 
                     turmas.add(new Turma(QuantidadeT, numeroT));
                     System.out.println("Turma criada!");
+                    
+                    System.out.println("");
                     break;
 
                 case 5:
                     System.out.println("\n--- LISTA DE PESSOAS ---");
+                    System.out.println("");
                     for (Pessoa p : pessoas) {
                         p.exibirPerfil(); // POLIMORFISMO AQUI
                     }
                     break;
 
                 case 6:
-                    System.out.println("Saindo...");
+                    System.out.println("Saindo");
                     break;
 
                 default:
-                    System.out.println("Opção inválida!");
+                    System.out.println("Opção invalida");
             }
 
         } while (opcao != 6);
-
         ler.close();
     }
 }

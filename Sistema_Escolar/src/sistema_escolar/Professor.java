@@ -7,6 +7,7 @@ public class Professor extends Pessoa{
     public Professor(String nome, String cpf, int idade, int cargaHoraria, double salario) {
         super(nome, cpf, idade);
         this.cargaHoraria = cargaHoraria;
+        this.salario = salario;
     }
     
     public void setCargaHoraria(int cargaHoraria){
@@ -27,7 +28,7 @@ public class Professor extends Pessoa{
     
     @Override
     public void exibirPerfil(){
-        System.out.println("Nome: "+ getNome());
+        System.out.println("Nome do professor: "+ getNome());
         System.out.println("CPF: " + getCpf());
         System.out.println("Idade: " + getIdade());
         System.out.println("Carga horaria em minutos: " + getCargaHoraria());

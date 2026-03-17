@@ -28,7 +28,7 @@ public class Funcionario extends Pessoa{
     
     @Override
     public void exibirPerfil(){
-        System.out.println("Nome: "+ getNome());
+        System.out.println("Nome do funcionario: "+ getNome());
         System.out.println("CPF: " + getCpf());
         System.out.println("Idade: " + getIdade());
         System.out.println("Carga horaria em minutos: " + getCargaHoraria());
